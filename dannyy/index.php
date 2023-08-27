@@ -21,7 +21,7 @@
         }
 
         header {
-            z-index: 2; /* Ajusta el valor según sea necesario */
+            z-index: 2; 
             position: fixed;
             top: 0;
             left: 0;
@@ -33,11 +33,10 @@
             font-family: 'Exo', sans-serif;
         }
 
-        /* Añadido para hacer que el contenido tenga margen debajo del encabezado fijo */
         #content {
             margin-bottom: 80;
-            margin-top: 60px; /* Altura del encabezado + espacio */
-            position: relative; /* Agrega esta línea */
+            margin-top: 60px; 
+            position: relative; 
             z-index: 0;
             font-family: 'Exo', sans-serif;
         }
@@ -46,29 +45,29 @@
             padding: 10px 20px;
             text-decoration: none;
             color: white;
-            transition: transform 0.3s; /* Agregamos una transición suave al efecto de escala */
+            transition: transform 0.3s; 
             display: inline-block;
         }
 
         .menu-item:hover {
-            transform: scale(1.2); /* Al pasar el mouse, el elemento se agranda al 120% de su tamaño original */
-            text-decoration: none; /* Eliminamos el subrayado */
-            color: white; /* Mantenemos el color blanco */
+            transform: scale(1.2); 
+            text-decoration: none; 
+            color: white; 
         }
 
         .typed {
             font-size: 24px;
-            color: white; /* Cambia el color de la fuente a blanco */
+            color: white; 
         }
 
         .carousel-overlay {
-            z-index: 2; /* Ajusta el valor según sea necesario */
+            z-index: 2; 
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor de la opacidad aquí */
+        background-color: rgba(0, 0, 0, 0.5); 
         z-index: 1;
     }
     .carousel-overlay {
@@ -81,8 +80,8 @@
             z-index: 1;
         }
         .carousel-inner {
-    max-width: 80%; /* Ajusta el valor según sea necesario */
-    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    max-width: 80%; 
+    margin: 0 auto; 
     z-index: 2;
 }
 .btn-2 {
@@ -90,7 +89,7 @@
             position: relative;
             display: block;
             margin: 10px auto;
-            padding: 5% 10%; /* Ajusta el tamaño de los botones */
+            padding: 5% 10%; 
            background-color: transparent;
            color: var(--color);
             transition: all 0.6s ease;
@@ -134,16 +133,12 @@
             transform: rotate(90deg);
             color: var(--color);
         }
-
-        /* Agregamos estilos para los botones en el nuevo div */
         .button-container {
             display: flex;
             justify-content: space-between;
             margin: 20px;
         }
- 
         #readingButton {
-    /* Estilos para el botón cuando no está en hover */
     --color: #3B4FA7;
 }
 
@@ -165,7 +160,6 @@
 }
 
 #streamButton {
-    /* Estilos para el botón cuando no está en hover */
     --color: #842F81;
 }
 
@@ -176,7 +170,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/Base9.jpg); /* Cambia la ruta a la imagen que desees */
+    background-image: url(img/Base9.jpg); 
     background-size: 100% 100%;
     opacity: 0;
     transition: opacity 0.4s ease;
@@ -252,52 +246,50 @@
             }
          }
     footer {
-    height: 80px; /* Ajusta según tu diseño */
-    background-color: #000000; /* Color de fondo del pie de página */
+    height: 80px; 
+    background-color: #000000; 
     color: white;
-    bottom: 0; /* Alinea el pie de página en la parte inferior */
+    bottom: 0; 
     left: 0;
     right: 0;
 }
 #about-content {
     margin-top: 20px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    background-color: rgba(0, 0, 0, 0.7); 
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white; /* Color de texto blanco */ 
+    color: white; 
     }
     .resume {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
-    color: #fff; /* Letras blancas */
-    padding: 40px 0; /* Espaciado superior e inferior */
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    padding: 40px 0;
 }
 
-/* Estilos para el contenido de los elementos */
 .resume .resume-title,
 .resume .resume-item {
-    background-color: transparent; /* Fondo transparente */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Espaciado inferior */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: transparent; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .resume .resume-item h4 {
-    color: #fff; /* Letras blancas */
+    color: #fff; 
 }
 
 .resume .resume-item h5 {
-    background: rgba(228, 237, 249, 0.8); /* Fondo azul claro con opacidad */
+    background: rgba(228, 237, 249, 0.8); 
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-/* Cambiar el color de los enlaces dentro de los elementos */
 .resume .resume-item a {
-    color: #007bff; /* Enlaces azules */
+    color: #007bff; 
 }
 
 .card-container {
@@ -523,6 +515,7 @@
             <p>(2 Dispositivos Simultaneamente)</p>
         </div>
     </div>
+
     <div class="card" style="background-color: rgba(0, 0, 0, 0.7);margin: 0 auto;">
     <div class="precio">35Bs.</div>         
     <img src="img/dos.jpg" alt="Imagen 3">
@@ -608,7 +601,7 @@
                 <svg class="bi" width="30" height="24" style="fill: white;"><use xlink:href="#bootstrap"></use></svg>
             </a>
             <div class="ms-auto">
-                <span>© 2023 Dannytha, Inc</span>
+            <a href="https://fb.com/dannythacx">© 2023 Dannytha</a>
             </div>
         </div>
     </footer>

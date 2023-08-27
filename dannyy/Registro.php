@@ -95,17 +95,16 @@ body {
         display: flex;
         align-items: center;
         margin-top: 25px;
-        margin-bottom: 16px; /* Agrega margen inferior para separar del botón */
-        color: white; /* Agrega color al texto */
+        margin-bottom: 16px;
+        color: white;
     }
 
     .checkbox-container input[type="checkbox"] {
         margin-right: 10px;
     }
 
-    /* Estilos para el select container */
     .select-container {
-       margin-top: 0px; /* Agrega margen superior para separar del checkbox */
+       margin-top: 0px; 
     }
 
     </style>
@@ -118,7 +117,7 @@ body {
 <body>
   <section class="form-registro">
      <h4>Formulario de Registro</h4>
-    <form action="registro.php" method="post"> <!-- Agregado el formulario -->
+    <form action="registro.php" method="post"> 
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
         <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
         <input class="controls" type="text" name="celular" id="celular" placeholder="Celular">
@@ -144,8 +143,7 @@ body {
     const checkbox = document.getElementById('terminos');
     const registrarBtn = document.getElementById('registrar-btn');
     
-    // Agregar evento para verificar si el checkbox está marcado
-    checkbox.addEventListener('change', function() {
+   checkbox.addEventListener('change', function() {
         registrarBtn.disabled = !checkbox.checked;
     });
 </script>
