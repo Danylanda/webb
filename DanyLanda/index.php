@@ -90,8 +90,8 @@
             display: block;
             margin: 10px auto;
             padding: 5% 10%; 
-           background-color: transparent;
-           color: var(--color);
+            background-color: transparent;
+            color: var(--color);
             transition: all 0.6s ease;
             font-size: 6vw;
             font-family: 'Exo', sans-serif; 
@@ -578,15 +578,23 @@
     </div>
 
     <div class="button-container" id="boton">
-    <button class="btn-2" style="--color: #842F81;" id="streamButton">
+    <button class="btn-2" style="--color: #842F81;" id="streamButton" data-link="https://stream.am2ps.online">
         <span></span>
         <span></span>
         Streaming
     </button>
-    <button class="btn-2" style="--color: #3B4FA7;" id="readingButton">
+    <button class="btn-2" style="--color: #3B4FA7;" id="readingButton" data-link="https://trading.am2ps.online">
         <span></span>
         <span></span>
         Reading
+    </button>
+</div>
+
+<div>
+<button class="btn-2" style="--color: #1D7DB5;" id="regiButton">
+        <span></span>
+        <span></span>
+        Registro
     </button>
 </div>
 
@@ -622,25 +630,42 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    // Espera a que el documento esté cargado
+   
     document.addEventListener("DOMContentLoaded", function() {
         const typedElement = document.querySelector('.typed');
 
         new Typed(typedElement, {
             strings: typedElement.getAttribute('data-typed-items').split(', '),
-            typeSpeed: 100,  // Velocidad de escritura en milisegundos
-            backSpeed: 50,   // Velocidad de retroceso en milisegundos
-            loop: true       // Repetir la animación
+            typeSpeed: 100,  
+            backSpeed: 50,   
+            loop: true       
         });
     });
 </script>
 <script>
-    document.getElementById("streamButton").addEventListener("click", function() {
+    document.getElementById("regiButton").addEventListener("click", function() {
+        window.location.href = "Registro.php";
+    });
+</script>
+<script>
+    const buttons = document.querySelectorAll('.btn-2');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+        
+            const link = button.getAttribute('data-link');
+
+            window.location.href = link;
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById("regiButton");
+    button.addEventListener("click", function() {
         window.location.href = "./Registro.php";
     });
-    document.getElementById("readingButton").addEventListener("click", function() {
-        window.location.href = "./Registro.php"; // Aquí usamos la misma URL para ambos botones
-    });
+});
 </script>
 
 </body>
