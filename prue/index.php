@@ -21,7 +21,7 @@
         }
 
         header {
-            z-index: 2; 
+            z-index: 3; 
             position: fixed;
             top: 0;
             left: 0;
@@ -296,6 +296,7 @@
             display: flex;
             justify-content: space-between;
             padding: 20px;
+            margin-bottom: 20px;
         }
     .card {
     font-family: 'Exo', sans-serif; 
@@ -305,6 +306,9 @@
     border-radius: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
+    padding: 20px; 
+    text-align: center; 
+ 
 }
         .card img {
             width: 100%;
@@ -321,6 +325,14 @@
     margin-top: 20px; 
     font-family: 'Exo', sans-serif;
 }
+.btn {
+        position: absolute;
+        bottom: 10px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        background-color: rgba(70, 7, 84, 0.7);
+        color: white;
+    }
 .precio{
   position: absolute;
   top: 10px;
@@ -329,37 +341,68 @@
   background: black;
   padding: 15px;
 }
+#about-content-2 {
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: auto; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    z-index: 1
+}
+
+#scrolling-text {
+    position: absolute; 
+    animation: scroll-up 5s linear infinite; 
+    font-size: 18px; 
+    line-height: 1.5; 
+    font-family: 'Exo', sans-serif;
+    margin-top: 0; 
+    top: 100px;
+    transform: translateY(0);
+    z-index:1;
+}
+
+@keyframes scroll-up {
+    0% {
+        top: 0%; /* Comienza desde la parte inferior */
+    }
+    100% {
+        top: -150%; /* Desplaza completamente hacia arriba */
+    }
+}
+
     </style>
 </head> 
  </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
     <header>
         <nav>
             <a class="menu-item" href="#">Inicio</a>
             <a class="menu-item" href="#nosotros">Nosotros</a>
-            <a class="menu-item" href="#precios">Precios</a>
-            <a class="menu-item" href="#boton">Servicios</a>
+            <a class="menu-item" href="#Precios">Precios</a>
+            <a class="menu-item" href="#boton">Ingresa a Entertopia</a>
         </nav>
     </header>
-
-    <section class="d-flex flex-column justify-content-center align-items-center" id="portada">
-        <div class="portada-container" data-aos="fade-in">
-            <h1>Dannytha </h1>
-           // <p font-family= 'Exo', sans-serif;>Soy <span class="typed" data-typed-items="Daniela, Landa, Garcia"></span></p>
-        </div>
-    </section>
-
-<div id="about-content">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sem in quam fermentum posuere.
-            Praesent condimentum, mi at elementum fringilla, urna tellus egestas purus, vel luctus neque libero ut elit.
-            Nulla facilisi. Proin aliquam arcu vel ex vehicula, ac fringilla ipsum varius. Maecenas at tincidunt quam.
-            Nullam tincidunt varius nulla, ut tristique arcu. Donec et bibendum elit, et laoreet arcu. Morbi at libero
-            fermentum, dignissim ligula non, tincidunt mi. Etiam accumsan ipsum nisl, et ultricies orci luctus ac.
+</head>
+<body>
+    <section id="portada">
+       <div class="portada-container" data-aos="fade-in">
+       <div id="about-content-2">
+        <p font-family= 'Exo', sans-serif; id="scrolling-text">
+        Te damos la bienvenida a Entertopia, donde los mundos de la imaginación y el conocimiento convergen en una experiencia única. 
+        Como plataforma vanguardista, Entertopia fusiona de manera impecable la emocionante vivencia de un servicio de streaming con los tesoros 
+        ilimitados de una biblioteca virtual.</p>
         </p>
     </div>
+    </div>
+    </section>
+
+
     <div id="content">
     <!-- Carrusel de imágenes -->
     <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -392,32 +435,22 @@
                 <div class="row" id=nosotros>
                     <div class="col-lg-6" data-aos="fade-up">
 
-                        <h3 class="resume-title">What </h3>
+                        <h3 class="resume-title">Entertopia</h3>
                         <div class="resume-item">
-                            <h4>is Lorem Ipsum?</h4>
-                            <h5>1998-2023</h5>
-                            <p><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</em></p>
-                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-                        </div>
+                            <p><em>Pero la magia de Entertopia no se detiene allí. Nuestra plataforma ofrece un servicio de IPTV que redefine la manera en que experimentas el entretenimiento. A través de la tecnología IPTV, te transportamos a un mundo donde las fronteras entre la televisión tradicional y el streaming se desvanecen. Sumérgete en una programación diversa y dinámica, donde el contenido llega directamente a tus dispositivos, adaptándose a tus preferencias y horarios.
+</em></p>
+</div>
                         <div class="resume-item">
-                            <h4>Why do we use it?</h4>
-                            <h5>Lorem Ipsum</h5>
-                            <p><em>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</em></p>
-                            <p>as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variou</p>
-                            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
-                        </div>
-                        <h3 class="resume-title">Where does it come from?</h3>
+                            <h4>Biblioteca Virtual</h4>
+                            <p><em>La biblioteca virtual de Entertopia es un tesoro para los amantes del conocimiento. Las páginas digitales cobran vida, ofreciendo una amplia gama de libros electrónicos, mangas, comics y revistas de interés general</em></p>
+                            <p>En cada estante virtual, encontrarás una invitación a explorar y aprender, todo a tu propio ritmo y según tus intereses.</p>
+                       </div>
+                        <h3 class="resume-title">En Resumen</h3>
                         <div class="resume-item">
-                            <h4>Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
-                            <h5>2000</h5>
-                            <p><em>McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</em></p>
-                            <p>consectetur, from a Lorem Ipsum passage</p>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Curso DJango</h4>
-                            <h5>2017</h5>
-                            <p><em>Udemy</em></p>
-                            <p>Licencia UC-MQ59UOWT</p>
+                            <h4>Entertopia es tu refugio en un mundo digital.</h4>
+                            <p><em>Aquí, la magia del entretenimiento sin publicidad se entrelaza con la riqueza del conocimiento en nuestra biblioteca virtual.</em></p>
+                            <p> Nuestra tecnología IPTV redefine tu experiencia televisiva, ofreciendo una programación adaptada a ti.</p>
+                            <p>Te invitamos a explorar, aprender y vivir la emoción de un mundo sin límites, donde el entretenimiento y el aprendizaje coexisten en perfecta armonía.</p>
                         </div>
                         <div class="resume-item">
                             <h4>Lorem Ipsum</h4>
@@ -444,30 +477,6 @@
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>Prácticas</h4>
-                            <h5>2019</h5>
-                            <p><em>ArcelorMittal R&D Asturias</em></p>
-                            <ul>
-                                <li>Conocimiento profundo de las tecnologías DLT y en particular de Hyperledger Fabric.</li>
-                                <li>Experiencia desplegando una cadena de bloques (Blockchain) en un entorno industrial real.
-                                </li>
-                                <li>Modificación y adaptación de los códigos fuente de Hyperledger Fabric para adaptarla a las necesidades reales de un negocio.
-                                </li>
-                                <li>Definición y codificación de contratos inteligentes.</li>
-                                <li>Aplicación de métodos de visualización e interacción con una cadena de bloques para diferentes usuarios, con diferentes permisos y visibilidad.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Investigación en tecnologías Blockchain</h4>
-                            <h5>2018 - 2019</h5>
-                            <p><em>Fundación Universidad de Oviedo</em></p>
-                            <ul>
-                                <li>Beca para investigación en tecnologías Blockchain y su impacto en el mercado, centradas en el producto Hyperledger Fabric de IBM.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
                             <h4>All the Lorem Ipsum generators </h4>
                             <h5>2023</h5>
                             <p><em>It uses a dictionary of over 200 Latin words/em></p>
@@ -491,106 +500,53 @@
             </div>
         </section>
 
-   
-    <div class="new-div" id="precios">
-    <h3 style="color: white;">Entertopia Streaming</h3>
-    </div>
-        <div class="card-container">
+    <div class="card-container" id=Precios>
         <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="precio">20Bs.</div>
-        <img src="img/unoo.jpg" alt="Imagen 1">
-        <h2 style="font-size: 28px;">Series</h2>
-            <p>Acceso a Series (Solo 1 Dispositivo)</p>
+            <h2 style="font-size: 24px;">Entertopia Streaming</h2> 
+            <p>____________</p>
+            <p>Acceso a Series (Solo 1 Dispositivo)"20Bs"</p>
+            <p>Acceso a Peliculas (Accion, Infantiles, Drama, Terror, Comedia)(Solo 1 Dispositivo)"25Bs"</p>
+            <p>Acceso a Peliculas y Series (Para 2 Dispositivos Simultaneamente)"30Bs"</p>
+            <p>Acceso a Peliculas, Series e IPTV (Para 4 Dispositivos)"35Bs"</p>
+            <p></p>
+            <button class="btn" style="background-color: rgba(70, 7, 84, 0.7); color: white;">Empezar</button> 
         </div>
         <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="precio">25Bs.</div>     
-        <img src="img/dos.jpg" alt="Imagen 2">
-        <h2 style="font-size: 28px;">Peliculas</h2>
-            <p>Accion,Infantiles,Drama,Terror, Comedia (Solo 1 Dispositivo)</p>
+            <h2 style="font-size: 24px;">Entertopia Onliteca</h2>
+            <p>____________</p>
+            <p>Acceso a Comics o Libros "15Bs"</p>
+            <p>Acceso a Comics y Mangas "20Bs"</p>
+            <p>Acceso a Comics, Mangas y Libros "30Bs"</p>
+            <p></p>
+            <button class="btn" style="background-color: rgba(70, 7, 84, 0.7); color: white;">Empezar</button> 
         </div>
         <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="precio">30Bs.</div>     
-        <img src="img/tres.jpg" alt="Imagen 3">
-        <h2 style="font-size: 28px;">Peliculas y Series</h2>
-            <p>(2 Dispositivos Simultaneamente)</p>
-        </div>
-    </div>
-
-    <div class="card" style="background-color: rgba(0, 0, 0, 0.7);margin: 0 auto;">
-    <div class="precio">35Bs.</div>         
-    <img src="img/dos.jpg" alt="Imagen 3">
-    <h2 style="font-size: 28px;">Peliculas,Series e IPTV</h2>
-            <p>Acceso a Peliculas, Series e IPTV (4 Dispositivos Simultaneamente)</p>
-        </div>
-    </div>
-
-
-    <div class="new-div">
-    <h3 style="color: white;">Entertopia Onlinetica</h3>
-</div>
-        <div class="card-container">
-        <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-            <img src="img/unoo.jpg" alt="Imagen 1">
-            <h2 style="font-size: 24px;">Acceso a Comics o Libros</h2>
-            <div class="precio">15Bs.</div> 
-        </div>
-        <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-            <img src="img/dos.jpg" alt="Imagen 2">
-            <h2 style="font-size: 24px;">Acceso a Comics y Mangas</h2>
-            <div class="precio">20Bs.</div> 
-        </div>
-        <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-            <img src="img/tres.jpg" alt="Imagen 3">
-            <h2 style="font-size: 24px;">Acceso a Comics, Mangas y Libros</h2>
-            <div class="precio">30Bs.</div> 
+            <h2 style="font-size: 24px;">Entertopia Full</h2>
+            <p>____________</p>
+            <p>Acceso a Comics o Libros y Accesso a Series (Solo 1 Dispositivo)"25Bs"</p>
+            <p>Acceso a Peliculas (Accion, infantiles, drama, Terror, Comedia) Accesos a comics y Mangas(Solo para 1 Dispositivo)"35Bs"</p>
+            <p>Acceso a Peliculas y series, Acceso a Comics, Mangas y Libros (Para 2 Dispositivos Simultaneamente)"45Bs"</p>
+            <p>Acceso a Peliculas, Series e IPTV y Acceso a Comics, Mangas y Libros (Para 4 Dispositivos Simultaneamente)"50Bs"</p>
+            <p></p>
+            
+            <button class="btn" style="background-color: rgba(70, 7, 84, 0.7); color: white;">Empezar</button> 
         </div>
     </div>
 
-    <div class="new-div" id="precios">
-    <h3 style="color: white;">Entertopia Full</h3>
-    </div>
-        <div class="card-container">
-        <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="precio">25Bs.</div>   
-        <img src="img/unoo.jpg" alt="Imagen 1">
-        <h2 style="font-size: 28px;">Comics o Libros y Accesso a Series</h2>
-            <p>Solo 1 Dispositivo</p>
-        </div>
-        <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="precio">35Bs.</div>     
-        <img src="img/dos.jpg" alt="Imagen 2">
-        <h2 style="font-size: 28px;">Peliculas, Comics y Mangas</h2>
-            <p>Accion,Infantiles,Drama, Terror y Comedia (1 Dispositivo)</p>
-        </div>
-        <div class="card" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="precio">45Bs.</div>     
-        <img src="img/tres.jpg" alt="Imagen 3">
-        <h2 style="font-size: 28px;">Peliculas y Series, Acceso a Comics, Mangas y Libros</h2>
-            <p>(2 Dispositivos Simultaneamente)</p>
-        </div>
-    </div>
-    <div class="card" style="background-color: rgba(0, 0, 0, 0.7);margin: 0 auto;">
-    <div class="precio">50Bs.</div>         
-    <img src="img/dos.jpg" alt="Imagen 3">
-    <h2 style="font-size: 28px;">Peliculas,Series e IPTV y Acceso a Comics, Mangas y Libros</h2>
-            <p>4 Dispositivos Simultaneamente</p>
-        </div>
-    </div>
-
+<div>
     <div class="button-container" id="boton">
     <button class="btn-2" style="--color: #842F81;" id="streamButton" data-link="https://stream.am2ps.online">
         <span></span>
         <span></span>
         Streaming
     </button>
-    <button class="btn-2" style="--color: #3B4FA7;" id="readingButton" data-link="https://trading.am2ps.online">
+    <button class="btn-2" style="--color: #3B4FA7;" id="readingButton" data-link="https://reading.am2ps.online">
         <span></span>
         <span></span>
         Reading
     </button>
 </div>
 
-<div>
 <button class="btn-2" style="--color: #1D7DB5;" id="regiButton">
         <span></span>
         <span></span>
@@ -629,24 +585,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-   
-    document.addEventListener("DOMContentLoaded", function() {
-        const typedElement = document.querySelector('.typed');
 
-        new Typed(typedElement, {
-            strings: typedElement.getAttribute('data-typed-items').split(', '),
-            typeSpeed: 100,  
-            backSpeed: 50,   
-            loop: true       
-        });
-    });
-</script>
-<script>
-    document.getElementById("regiButton").addEventListener("click", function() {
-        window.location.href = "Registro.php";
-    });
-</script>
 <script>
     const buttons = document.querySelectorAll('.btn-2');
 
