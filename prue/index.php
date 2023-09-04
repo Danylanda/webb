@@ -452,48 +452,7 @@
                             <p> Nuestra tecnología IPTV redefine tu experiencia televisiva, ofreciendo una programación adaptada a ti.</p>
                             <p>Te invitamos a explorar, aprender y vivir la emoción de un mundo sin límites, donde el entretenimiento y el aprendizaje coexisten en perfecta armonía.</p>
                         </div>
-                        <div class="resume-item">
-                            <h4>Lorem Ipsum</h4>
-                            <h5>2023</h5>
-                            <p><em>Lorem Ipsum</em></p>
-                            <p>Lorem Ipsum</p>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Lorem Ipsum</h4>
-                            <h5>2023</h5>
-                            <p><em>Lorem</em></p>
-                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="resume-title">Where can I get some?</h3>
-                        <div class="resume-item">
-                            <h4>Lorep Ipsum</h4>
-                            <h5>2023 - Presente</h5>
-                            <p><em>Lorep</em></p>
-                            <ul>
-                                <li>There are many variations of passages of Lorem Ipsum available</li>
-                                <li>but the majority have suffered alteration in some form, by injected humour</li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
-                            <h4>All the Lorem Ipsum generators </h4>
-                            <h5>2023</h5>
-                            <p><em>It uses a dictionary of over 200 Latin words/em></p>
-                            <ul>
-                                <li>making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
-                            <h4>All the Lorem Ipsum generators </h4>
-                            <h5>2023</h5>
-                            <p><em>It uses a dictionary of over 200 Latin words</em></p>
-                            <ul>
-                                <li>making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
 
