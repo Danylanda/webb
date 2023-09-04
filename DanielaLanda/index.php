@@ -84,6 +84,15 @@
     margin: 0 auto; 
     z-index: 2;
 }
+.btn {
+        position: absolute;
+        bottom: 10px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        background-color: rgba(70, 7, 84, 0.7);
+        color: white;
+    }
+
 .btn-2 {
             border: 3px solid;
             position: relative;
@@ -310,13 +319,6 @@
     text-align: center; 
  
 }
-        .card img {
-            width: 100%;
-            max-height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
     .new-div {
     padding: 20px;
     border-radius: 10px;
@@ -325,44 +327,28 @@
     margin-top: 20px; 
     font-family: 'Exo', sans-serif;
 }
-.btn {
-        position: absolute;
-        bottom: 10px; 
-        left: 50%; 
-        transform: translateX(-50%); 
-        background-color: rgba(70, 7, 84, 0.7);
-        color: white;
-    }
-.precio{
-  position: absolute;
-  top: 10px;
-  left: 0;
-  font-size: 15px;
-  background: black;
-  padding: 15px;
-}
+
 #about-content-2 {
     width: 100%; 
-    height: 100%; 
+    height: 100%;
+    top: 250px; 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     overflow: auto; 
     text-align: center; 
-    padding: 20px; 
     position: relative; 
-    z-index: 1
+    z-index:1;
+    overflow: hidden;
 }
 
 #scrolling-text {
     position: absolute; 
-    animation: scroll-up 5s linear infinite; 
-    font-size: 18px; 
+    animation: scroll-up 10s linear infinite; 
+    font-size: 18px !important; 
     line-height: 1.5; 
     font-family: 'Exo', sans-serif;
-    margin-top: 0; 
-    top: 100px;
     transform: translateY(0);
     z-index:1;
 }
@@ -393,7 +379,7 @@
     <section id="portada">
        <div class="portada-container" data-aos="fade-in">
        <div id="about-content-2">
-        <p font-family= 'Exo', sans-serif; id="scrolling-text">
+        <p font-family= 'Exo' sans-serif; id="scrolling-text">
         Te damos la bienvenida a Entertopia, donde los mundos de la imaginación y el conocimiento convergen en una experiencia única. 
         Como plataforma vanguardista, Entertopia fusiona de manera impecable la emocionante vivencia de un servicio de streaming con los tesoros 
         ilimitados de una biblioteca virtual.</p>
@@ -528,19 +514,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const typedElement = document.getElementById('typed');
-        const typedItems = typedElement.getAttribute('data-typed-items').split(', ');
-        let currentItemIndex = 0;
-
-        function typeNextItem() {
-            typedElement.textContent = typedItems[currentItemIndex];
-            currentItemIndex = (currentItemIndex + 1) % typedItems.length;
-        }
-
-
-    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
